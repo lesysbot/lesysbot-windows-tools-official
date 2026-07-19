@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "sysbot": {
+      "source": {
+        "source": "github",
+        "repo": "syan-dev/sysbot"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "sysbot-tool-dev@sysbot": true
+  }
+}
