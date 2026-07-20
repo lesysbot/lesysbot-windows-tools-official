@@ -36,7 +36,7 @@ so the firmware wakes the machine again on its own.
 ## Install
 
 ```powershell
-sysbot tools install syan-dev/sysbot-windows-tools-official/shutdown-wake
+lesysbot tools install lesysbot/lesysbot-windows-tools-official/shutdown-wake
 ```
 
-Or drop this `shutdown-wake/` folder into your `~/.sysbot/tools/` and restart SysBot.
+Or drop this `shutdown-wake/` folder into your `~/.lesysbot/tools/` and restart LeSysBot.

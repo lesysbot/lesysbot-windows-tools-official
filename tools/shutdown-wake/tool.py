@@ -25,13 +25,13 @@ import asyncio
 import time
 from datetime import datetime
 
-from sysbot.mcp import notify_later, tool
+from lesysbot.mcp import notify_later, tool
 
 # shutdown fires 60 s after scheduling; announce shortly before, leaving
 # enough margin for the message to actually get out.
 _ANNOUNCE_AFTER = 50.0
 
-_TASK_NAME = "SysBotWake"
+_TASK_NAME = "LeSysBotWake"
 
 _pending_announce: asyncio.Task | None = None
 

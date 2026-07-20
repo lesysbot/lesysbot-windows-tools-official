@@ -36,7 +36,7 @@ and check there; NVIDIA GPU readings work anywhere `nvidia-smi` does.
 ## Install
 
 ```powershell
-sysbot tools install syan-dev/sysbot-windows-tools-official/temperature
+lesysbot tools install lesysbot/lesysbot-windows-tools-official/temperature
 ```
 
-Or drop this `temperature/` folder into your `~/.sysbot/tools/` and restart SysBot.
+Or drop this `temperature/` folder into your `~/.lesysbot/tools/` and restart LeSysBot.

@@ -12,7 +12,7 @@ from __future__ import annotations
 import asyncio
 import shutil
 
-from sysbot.mcp import tool
+from lesysbot.mcp import tool
 
 # One "InstanceName,CurrentTemperature" line per ACPI thermal zone; the value
 # is in tenths of a kelvin.

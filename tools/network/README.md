@@ -24,7 +24,7 @@ folder and tool names deliberately match, so the two replace each other.
 ## Install
 
 ```powershell
-sysbot tools install syan-dev/sysbot-windows-tools-official/network
+lesysbot tools install lesysbot/lesysbot-windows-tools-official/network
 ```
 
-Or drop this `network/` folder into your `~/.sysbot/tools/` and restart SysBot.
+Or drop this `network/` folder into your `~/.lesysbot/tools/` and restart LeSysBot.

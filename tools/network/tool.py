@@ -4,9 +4,9 @@ The official Linux collection wraps the Unix variants (``ping -c``,
 ``traceroute``); these use the Windows flags (``ping -n``, ``tracert``) and
 declare ``platforms=["windows"]``. Install one collection's network package or
 the other — the tool names match on purpose, and both packages install as a
-folder named ``network/``, so they replace each other in ``~/.sysbot/tools/``.
+folder named ``network/``, so they replace each other in ``~/.lesysbot/tools/``.
 """
-from sysbot.mcp import CLITool
+from lesysbot.mcp import CLITool
 
 _WIN = ["windows"]
 

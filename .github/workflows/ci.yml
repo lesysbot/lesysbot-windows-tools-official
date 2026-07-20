@@ -19,8 +19,8 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install
-        run: pip install "sysbot @ git+https://github.com/syan-dev/sysbot" pytest ruff
+        run: pip install "lesysbot @ git+https://github.com/lesysbot/lesysbot" pytest ruff
       - name: Lint
         run: ruff check .
       - name: Test
-        run: pytest _tests/
+        run: pytest tests/

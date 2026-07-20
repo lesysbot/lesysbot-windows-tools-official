@@ -1,12 +1,13 @@
 """Wake-timer logic in the shutdown-wake package.
 
-Loads shutdown-wake/tool.py straight from its file (as the registry would)
+Loads tools/shutdown-wake/tool.py straight from its file (as the registry would)
 and records every subprocess call through a patched _run — so these run on
 any OS without touching Task Scheduler or shutting anything down.
 
-Kept in a ``_``-prefixed directory so neither SysBot's loader nor its
-installer treats it as a tool package. Tests are sync and drive the async
-tools via asyncio.run(), so plain ``pytest _tests/`` works with no
+Lives in ``tests/`` at the repo root, next to ``tools/`` — outside the
+tools dir, so LeSysBot's loader never imports it (and the installer skips
+``tests`` by name). Tests are sync and drive the async
+tools via asyncio.run(), so plain ``pytest tests/`` works with no
 pytest-asyncio configuration.
 """
 from __future__ import annotations
@@ -17,7 +18,7 @@ from pathlib import Path
 
 import pytest
 
-_TOOL_PY = Path(__file__).resolve().parents[1] / "shutdown-wake" / "tool.py"
+_TOOL_PY = Path(__file__).resolve().parents[1] / "tools" / "shutdown-wake" / "tool.py"
 
 
 def run(coro):
